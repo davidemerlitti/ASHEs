@@ -1,5 +1,5 @@
 # ASHEs
-ASHEs is a program written in C# that models the forward evolution of haplotypes from an ancestral state under different scenarios. Groups of haplotypes, either in multi-locus or binary format, are allowed to sort along Markov chains following random probability distributions.
+ASHEs is a program written in C# that models the forward evolution of [haplotypes](https://en.wikipedia.org/wiki/Haplotype) from an ancestral state under different scenarios. Groups of haplotypes, either in multi-locus or binary format, are allowed to sort along Markov chains following random probability distributions.
 
 Parameter value estimations, performance of genetic distance measures and alternate demographic histories can be evaluated by comparing randomized replications of user-specified evolutionary models with experimental data.
 
