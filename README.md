@@ -66,7 +66,7 @@ Starting a new ASHEs session the first step is to design a new simulation projec
 Each project describes the model of population history to be simulated over the chosen time window. 
 
 ## Output files
-Outputs are saved in the same directory as the input file, in the form {"[input file name](input-file-name).csv"}. Each simulation will be given as a single row and t columns.
+Outputs are saved in the same directory as the input file, in the form `input-file-name.csv`. Each simulation will be given as a single row and t columns.
 
 ## Post-processing (R?)
 
@@ -80,6 +80,7 @@ The outputs can be opened with Microsoft Excel or OpenOffice Calc. Summary stati
 The efficiency of two genetic distance DHS (Tofanelli et al. In press) and FST (Weir & Cockerman 1984) under different evolutionary scenarios (Table 1) has been tested by  ASHEs. Each computer simulation (200 iterations) modelled the increase rate over 200 generations of averaged DHS and FST values between diverging populations each evolving under reproductive isolation and constant size (Wright-Fisher model) from a source pool of 9-locus YSTR haplotypes (N=5,000; SIM1.csv). The impact on the two statistics of the number of migrants from a source population with Hx=0.815 was evaluated by simulating different values of Nm. The extent of the sampling error (measured as percent Coefficient of Variation or CV), and the linear relationship with time (expressed as both α, the angular coefficient and R2, the Pearson’s coefficient of regression) have been used as performance criteria. 
 
 **Project**
+<pre>
 Title: SIM1
 Module: TAP
 Data type: Multistate
@@ -100,8 +101,9 @@ Calculate group X N: false
 Calculate group Y P: false
 Calculate group Y H: false
 Calculate group Y N: false
+</pre>
 
- (INSERT TABLE)
+(INSERT TABLE)
 
 DHS performed much better than FST, being more linear with time (from 2 to 12 times higher α values) and having much lower variance (from 3,6 to 5 times lower CV values). Both the distributions show deviation from linearity (low R2 values) in the case of a marked founder effect (migrant size around 10). 
 
@@ -110,6 +112,7 @@ We used ASHEs to test whether the differences in frequency between "Berber" (12,
 We calculated confidence intervals of the probability distributions of J1 frequencies  over the last 1,350 years (54 generations assuming 25 years per generation) from two source populations (GroupX0B, GroupX0A) showing the current frequency levels either in Berbers (p0B) or  Arabs (p0A). Before starting simulations the haplotype of choice in the data box should be clicked. In both cases the simulation gave observed J1 frequencies largely comprised in the confidence intervals expected by random fluctuations (Figure 2).
 
 **Project**
+<pre>
 Title: SIM2
 Module: OAP
 Data type: Binary
@@ -125,7 +128,7 @@ Calculate distance: false
 Calculate group X P: true
 Calculate group X H: false
 Calculate group X N: false
-
+</pre>
 Figure 2. Random fluctuactions of Arab (in green) and Berber (in red) J1 frequencies over the last 54 generations: Mean values (thick line) and 95% CI intervals (dotted lines).
 
 ## References
