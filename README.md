@@ -20,17 +20,19 @@ The standard formulation of the Wright-Fisher model assumes stationarity, random
 ## Modules
 Two different approaches are available for simulations: 
 
-# one-ancestral-population module (OAP)
-# two-ancestral-population module (TAP).
+* one-ancestral-population model (OAP)
+* two-ancestral-population model (TAP)
 
-### One-ancestral-population module (OAP)
+### One-ancestral-population model (OAP)
 In the OAP approach one can model the evolution of a single group of haplotypes and follow the fluctuation of a chosen variable (N, p, H) under evolutionary conditions defined by setting parameter options for 1+g, µ.
 
 #### Randomly Generated grid
+TODO
 
 #### Downloaded data file
+TODO
 
-### Two-ancestral-populations module (TAP)
+### Two-ancestral-populations model (TAP)
 In the TPA approach the variation of both, population estimators (N, p, H) and distance measures (FST, DHS), can be followed over time. Two formulations of FST are implemented: FST, the standard fixation index (Wright 1921) and FST2, the unbiased measure of Weir & Cockerman (1984) as described in Michalakis & Excoffier (1996). DHS is a measure based on the amount and type of haplotypes shared by two diverging populations (Tofanelli et al. in press).
 	
 #### Randomly Generated grid 
@@ -60,7 +62,7 @@ Data records can be imported from .csv files. Each row must correspond to one ha
 ASHES allows missing data. To mark data as missing, use “?”.  Missing data will not be used in calculations.
 
 ## Project design
-Starting a new ASHEs session the first step is to design a new simulation project.  From the File menu select New Project and set options (Title, Data format, Model). Then, the ancestral population(s) of haplotypes must be loaded (File menu or yellow GroupX/Y iconas) or generated (Functions menu or white GroupX/Y iconas). Parameters, variables and graphic options can be set varying default values in the windows on the left side of ASHES page. The project can be saved in a .xml format by clicking on the “save project” button in the File menu. The project will be stored in the main directory with the given title name and can be re-loaded for subsequent simulations.
+Starting a new ASHEs session the first step is to design a new simulation project. From the `File` menu select `New Project` and set options (Title, Data format, Model). Then, the ancestral population(s) of haplotypes must be loaded (`File` menu or yellow `GroupX/Y` iconas) or generated (`Functions` menu or white `GroupX/Y` iconas). Parameters, variables and graphic options can be set varying default values in the windows on the left side of ASHES page. The project can be saved in a `.xml format` by clicking on the `save project` button in the `File` menu. The project will be stored in the main directory with the given title name and can be re-loaded for subsequent simulations.
 Each project describes the model of population history to be simulated over the chosen time window. 
 
 ## Output files
